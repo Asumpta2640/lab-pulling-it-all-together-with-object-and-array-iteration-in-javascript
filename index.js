@@ -115,11 +115,11 @@ function gameObject() {
     };
 }
 function numPointsScored(playerName) {
-  const game = gameObject(); //expression
-  const homePlayers = game.home.players; //Object
-  const awayPlayers = game.away.players; //object away
+  const game = gameObject(); 
+  const homePlayers = game.home.players; 
+  const awayPlayers = game.away.players; 
 
-  const homePlayer = homePlayers[playerName]; //playerObjet or undefined
+  const homePlayer = homePlayers[playerName]; 
   const awayPlayer = awayPlayers[playerName];
 
   if (homePlayer) {
@@ -131,11 +131,11 @@ function numPointsScored(playerName) {
 }
 
 function shoeSize(playerName) {
-  const game = gameObject(); //expression
-  const homePlayers = game.home.players; //Object
-  const awayPlayers = game.away.players; //object away
+  const game = gameObject(); 
+  const homePlayers = game.home.players; 
+  const awayPlayers = game.away.players; 
 
-  const homePlayer = homePlayers[playerName]; //playerObjet or undefined
+  const homePlayer = homePlayers[playerName]; 
   const awayPlayer = awayPlayers[playerName];
 
   if (homePlayer) {
@@ -176,24 +176,24 @@ function playerNumbers(teamName) {
   const away = game.away;
 
   if (home.teamName === teamName) {
-    const players = home.players; //{}
-    const playerKeys = Object.keys(players); //["Alan Anderson", "Reggie Evens",...]
+    const players = home.players; 
+    const playerKeys = Object.keys(players); 
     let jerseyNumbers = [];
     for (let i = 0; i < playerKeys.length; i++) {
-      let playerKey = playerKeys[i]; //Alan Anderson ,Reggie Evens
-      let playerObj = players[playerKey]; //{number:0,shoe:16,...}
+      let playerKey = playerKeys[i]; 
+      let playerObj = players[playerKey]; 
       let jerseyNumber = playerObj.number;
       jerseyNumbers.push(jerseyNumber);
     }
     return jerseyNumbers;
   }
   if (away.teamName === teamName) {
-    const players = away.players; //{}
-    const playerKeys = Object.keys(players); //["Alan Anderson", "Reggie Evens",...]
+    const players = away.players;
+    const playerKeys = Object.keys(players); 
     let jerseyNumbers = [];
     for (let i = 0; i < playerKeys.length; i++) {
-      let playerKey = playerKeys[i]; //Alan Anderson ,Reggie Evens
-      let playerObj = players[playerKey]; //{number:0,shoe:16,...}
+      let playerKey = playerKeys[i]; 
+      let playerObj = players[playerKey];
       let jerseyNumber = playerObj.number;
       jerseyNumbers.push(jerseyNumber);
     }
